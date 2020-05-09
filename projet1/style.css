@@ -1,0 +1,180 @@
+:root{
+    --colorBlanc: hsl(204, 43%, 93%);
+    --colorVert: hsl(179, 62%, 43%);
+    --colorVertFluo: hsl(71, 73%, 54%);
+    --colorGris:hsl(218, 22%, 67%);
+   
+}
+
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+
+
+body{
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+/* TOUT: container */
+.container{
+    width: 650px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding-top: 25px;
+    margin-top: 100px;
+}
+
+/* PARTIE header */
+
+.header{
+    padding-left: 40px;
+}
+
+.header h1{
+    color: var(--colorVert);
+}
+
+.header h4 {
+    color: var(--colorVertFluo);
+}
+
+.header p{
+    color: var(--colorGris);
+}
+
+
+/*PARTIE abonne */
+.abonne{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+/* price */
+.price{
+    background-color: var(--colorVert);
+    border-radius: 0 0 0 5px;
+    padding-left: 40px;
+    padding-bottom: 25px;
+}
+
+.price h4{
+    color: var(--colorBlanc);
+}
+
+.price .priceP {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.price .priceP span{
+    font-size: 1rem;
+    opacity: .5;
+    font-weight: 400;
+}
+
+.price p {
+    color: var(--colorBlanc);
+    opacity: .8;
+}
+
+.price button{
+    cursor: pointer;
+    background-color: var(--colorVertFluo);
+    border: none;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    color: var(--colorBlanc);
+    font-weight: 500;
+    width:230px;
+    padding : 10px;
+}
+
+.price button:hover{
+    opacity: .9;
+}
+
+
+/* description */
+.description{
+    background-color: var(--colorVert);
+    opacity: .8;
+    border-radius: 0 0 5px 0;
+    padding-left: 40px;
+    padding-bottom: 25px;
+}
+
+.description h4{
+    color: var(--colorBlanc);
+}
+
+.description p{
+    color: var(--colorBlanc);
+    opacity: .7;
+}
+
+@media(max-width:721px){
+    .container{
+        width:80%;
+    }
+    .header{
+        display: block;
+        text-align: center;
+        padding: 20px 10px 20px 10px;
+    }
+
+   .abonne{
+       display: block;
+       text-align: center;
+   }
+
+   .price{
+       padding: 20px 10px 20px 10px;
+       border-radius:0;
+   }
+
+   .description{
+    padding: 20px 10px 20px 10px;
+    border-radius: 0 0 5px 5px;
+   }
+
+   .description h4{
+       margin-top: 0;
+   }
+
+}
+
+
+/* 375px;
+     1440px; */
+@media(max-width:452px){
+        .container{
+            width:80%;
+        }
+        .header{
+            display: block;
+            text-align: center;
+            padding: 20px 10px 20px 10px;
+        }
+
+       .abonne{
+           display: block;
+           text-align: center;
+       }
+
+       .price{
+           padding: 20px 10px 20px 10px;
+       }
+
+       .description{
+        padding: 20px 10px 20px 10px;
+        border-radius: 0 0 5px 5px;
+       }
+
+       .description h4{
+           margin-top: 0;
+       }
+
+    
+    }
